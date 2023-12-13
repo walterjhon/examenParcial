@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Gestión de Tienda{% endblock %}
+
+{% block pageContent %}
+
+   <h2>Panel de Navegación</h2>
+    <nav>
+        <ul>
+            <li><a href="{% url 'gestionTienda:gestion_tiendas' %}">Tienda</a></li>
+            <li><a href="{% url 'gestionTienda:gestion_productos' %}">Producto</a></li>
+        </ul>
+    </nav>
+
+    <h3>Gestión de Tienda</h3>
+    <p>Aquí va tu contenido específico para la gestión de tienda.</p>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu Página</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+         nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Examen Final</h1>
+    </header>
+
+    <main>
+        <nav>
+        <ul>
+            <li><a href="{% url 'gestionTienda:gestion_tiendas' %}">Tienda</a></li>
+            <li><a href="{% url 'gestionTienda:gestion_productos' %}">Producto</a></li>
+        </ul>
+    </nav>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
